@@ -33,7 +33,7 @@ class CustomView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         // 텍스트
         typedArray.getString(R.styleable.CustomView_text)?.apply { setText(this) }
 
-        // 글자 크기 (small, normal)
+        // 글자 크기 (small, normal, big)
         typedArray.getString(R.styleable.CustomView_textSize)?.apply { setTitleSize(this) }
 
         typedArray.recycle()
